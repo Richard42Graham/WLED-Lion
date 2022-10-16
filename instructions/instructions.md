@@ -205,10 +205,10 @@ Execute file
 
 ##### ESPtool
 - Download the programming tool from  [here](https://github.com/espressif/esptool/releases/latest)
-- Extract the zip file (install [7zip](https://www.7-zip.org/ you do not have a program for it))
+- Extract the zip file (install [7zip](https://www.7-zip.org/) you do not have a program for it)
 - Open a terminal in the directory containing `esptool.exe`
 
-## Mac
+#### Mac
 Install [Homebrew](https://brew.sh/)
 
 1. Open the [Terminal](https://raw.githubusercontent.com/DecaturMakers/CH340_drivers-Linux-Mac-Windows/master/drivers/macos/Terminal.png) (use [Spotlight](https://www.imore.com/how-use-spotlight-mac#use) to find it if you must)
@@ -236,12 +236,14 @@ brew install esptool
 
 The flashing command is similar for all operating systems with a few variances
 ### Linux and Mac
+
 ```bash
 esptool.py write_flash 0x0 WLED_0.13.3_ESP01.bin
 ```
 ESPtool can auto-detect the port, but it can specified with the  `-p` flag. The ports are usually `/dev/ttyUSB0` or `/dev/ttyACM0`.
 
 If esptool connects to the flasher and progresses, then you have successfully flashed firmware
+
 
 #### Troubleshooting
 ##### Problem: failed connection in ESPtools:
@@ -257,6 +259,16 @@ A fatal error occurred: Could not connect to an Espressif device on any of the 1
 
 **Solution**: Fetch the PlatformIO udev rules [here](https://docs.platformio.org/en/stable//core/installation/udev-rules.html)  and follow the instructions
 
+#### Problem: esptool not found
+If calling the esptool program after successful installation returns the error `esptool not found`. 
+
+**Solution:** The path for python modules have not been set. 
+Do:
+```bash
+echo export PATH="/usr/local/bin:$PATH" >> ~/.bash_profile
+
+source ~/.bash_profile
+```
 
 ### Windows
 ```bash
@@ -264,7 +276,7 @@ esptool.exe -p COMx write_flash 0x0 WLED_0.13.3_ESP01.bin
 ```
 
 The com port can be found under device manager, see image
-![[Pasted image 20221012201054.png]]
+![](assets/part_b_01_windows_devices.png)
 
 If esptool connects to the flasher and progresses, then you have successfully flashed firmware
 
@@ -296,10 +308,10 @@ As there is many of you all trying this at once, its recommended that you wait a
 
 ```
 Wifi Name  : WLED 
-Password    :"wled1234"
+Password   :"wled1234"
 ```
 
-Once your connected your phone should redirect you to a “login page” if not go to `4.3.2.1`
+Once your connected your phone should redirect you to a “login page” if not go to `http://4.3.2.1`
 
 You should see a screen like this 
 
@@ -332,9 +344,10 @@ I recommend using the WLED app on IOS or Android for easily finding and controll
 **Android app**: [Play store](https://play.google.com/store/apps/details?id=com.aircoookie.WLED&hl=en&gl=US
 )
 
-IOS app: [App store](https://apps.apple.com/us/app/wled/id1475695033
+**IOS app**: [App store](https://apps.apple.com/us/app/wled/id1475695033
 )
 
+**Documentation**
 There are also some great documentation online for changing settings and doing other things with it. [https://kno.wled.ge/basics/tutorials/](https://kno.wled.ge/basics/tutorials/)
 
 
