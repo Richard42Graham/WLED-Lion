@@ -2,22 +2,22 @@
 
 WLED Workshop Instructions.
 
-Rev 1.0
+Rev 1.1
 
 ![](assets/word_art.png)
 
 ## Part A - Hardware
 
-These are the parts you will be using, and what they look like, and there names.
+These are the parts you will be using, what they look like and their names.
 
 ![](assets/01_kit_overview.jpg)
 
 A Brief description of parts.
-- pin header			( to hold the ESP8266 , and make it easy to remove for programming)
+- Pin header			( to hold the ESP8266, and make it easy to remove for programming)
 - USB				( just an easy way to power the device once finished)
-- Neo Pixel wire		( A way to connect and disconnect the Neo pixel string lights to the pcb)
-- cable tie.			( to secure the wires, keep it neat. And protect the wires form being pulled)
-- ESP8266			( the brains that control the lights, and hosts a web page on WiFi)
+- Neo Pixel wire		( A way to connect and disconnect the Neo pixel string lights to the PCB)
+- cable tie.			( to secure the wires, keep it neat. And protect the wires from being pulled)
+- ESP8266			( the brains that control the lights, and host a web page on WiFi)
 - PCB				( holds all the components and links them together electrically)
 
 
@@ -31,28 +31,28 @@ PCB bottom
 
 
 The button is already soldered on for you on the bottom of the PCB. 
-There is also some other components pre-soldered onto the PCB, you don't need to worry about them for assembly. 
+There are also some other components pre-soldered onto the PCB, you don't need to worry about them for assembly. 
 
-But if your interested in what they are, continue reading. 
+But if you are interested in what they are, continue reading. 
 The “Vreg” is a 3.3v regulator, it takes the 5V from the USB as power in, and converts it down to 3.3v needed to power the ESP8266, as the ESP cannot handle 5V. The 2 smaller components next to it, are 2 capacitors, one between 5V and GND. And one between 3.3V and GND. You can see this more clearly in the schematics. 
 
-The capacitors act like tiny battery's, so if the Neo Pixels or the ESP8266 suddenly draws a lot of current for a short amount of time, the capacitors will supply the extra current, and recharge when they draw less current. Adding the capacitors reduces glitches.
+The capacitors act like tiny batteries, so if the Neo Pixels or the ESP8266 suddenly draws a lot of current for a short amount of time, the capacitors will supply the extra current, and recharge when they draw less current. Adding the capacitors reduces glitches.
 
-The PCB is mainly made of fiber glass with copper layers on the top and bottom, to electrically connect the components.
+The PCB is mainly made of fiberglass with copper layers on the top and bottom, to electrically connect the components.
 
 ### Assembly
 #### Step 1
 Solder the pin header to the PCB.
 
-It should be mounted the opposite side to the button. As shown here
+It should be mounted on the opposite side of the button. As shown here
 
 ![](assets/04_pre_solder_pcb_top.jpg)
 
 ![](assets/05_pre_solder_pcb_bottom.jpg)
 
-I recommend soldering just 1 pin in the corner to start with. Once its soldered, check the pin header is in flat and straight. If its not you can just heat up that one solder with the iron and carefully push the pin header flat agents the board. 
+I recommend soldering just 1 pin in the corner to start with. Once it's soldered, check the pin header is flat and straight. If it's not you can just heat up that one solder with the iron and carefully push the pin header flat agents the board. 
 
-Once your happy with the position you can solder the rest of the pins. 
+Once you are happy with the position you can solder the rest of the pins. 
 
 
 when completed it should look something like this
@@ -65,35 +65,35 @@ when completed it should look something like this
 
 Solder the USB to the PCB.  
 
-The USB wire only provides  power to the board, so there's only 2 wires to solder.
+The USB wire only provides power to the board, so there are only 2 wires to solder.
 The ( + ) is the Red wire. And goes in the power + hole on the board.
-The ( - ) is the Black wire. And goes in the power – hole on the board. 
+The ( - ) is the Black wire. And goes in the power–hole on the board. 
 
 **NOTE:** 
-The ( - ) wire also has a thin metal wire wrapped round it, this is the GND for the USB’s metal part, it can be ignored as its wired to the – wire already. 
+The ( - ) wire also has a thin metal wire wrapped around it, this is the GND for the USB’s metal part, it can be ignored as it is wired to the – wire already. 
 
 ![](assets/08_usb_a_cable.jpg)
 
-The 2 wires go in the “power in” section of the PCB. As shown here.
+The 2 wires go into the “power in” section of the PCB. As shown here.
 I recommend soldering in 1 wire at a time. 
 
 ![](assets/09_usb_solder.jpg)
 ![](assets/10_usb_solder_top.jpg)
 
-(**Note:** the wires should not touch each other or anything else. In this example its close to the button, but not actually touching, it should be trimmed down to prevent it touching with side cutters.)
+(**Note:** the wires should not touch each other or anything else. In this example, it's close to the button but not touching, it should be trimmed down to prevent it from touching with side cutters.)
 
 #### Step 3
 
 Solder the Neo Pixel wire to the PCB. 
 
-There is 3 wires. 5V + for the Neo Pixels, - or GND for the Neo Pixel, and Data for the Neo Pixels. 
+There are 3 wires. 5V + for the Neo Pixels, - or GND for the Neo Pixel, and Data for the Neo Pixels. 
 They are colored and labeled below. 
 
 ![](assets/11_light_pins.jpg)
 
 The correct holes are labeled on the PCB, and should closely match the labeled photo above. 
 
-Another way to help wire it the right way round, is the plastic clip on the end of the wire should be on the same side as your pin header for the ESP. And NOT the same side as the button, if it is, seek help.
+Another way to help wire it the right way around is the plastic clip on the end of the wire should be on the same side as your pin header for the ESP. And NOT the same side as the button, if it is, seek help.
 
 as the wires are so close together, I would recommend trying to get all 3 to fit in the “Neo Pixel” holes in the PCB, then solder 1 in place to hold the rest. This will make it easier to solder the rest.
 
@@ -109,7 +109,7 @@ Fold both wires back, and cable tie them to the PCB.
 
  This provides some basic strain relief, so if the wires are pulled for any reason they shouldn't short together or come out. It also makes it a bit neater. 
 
-I recommend making sure theirs a little slack on the USB wire. This can be achieved by putting on the cable tie, then pushing the USB wire back up thought it just a bit, till the + and – have a little wiggle to them. 
+I recommend making sure theirs a little slack on the USB wire. This can be achieved by putting on the cable tie, then pushing the USB wire back up through it just a bit, till the + and – have a little wiggle to them. 
 
 It will look something like this.
 
@@ -124,7 +124,7 @@ Make sure none of the pins on the back a touching each other. You can also use s
 If you have already programmed your ESP8266, you can now attach it to the PCB. 
 If you have not, you can attach it anyway, so it doesn't get lost in transport. 
 
-Place the ESP8266 in the pin header as shown below. Make sure that non of the pins stick out, every pin has a hole it should go in. Its easy to pull out again and put it back in if its wrong. 
+Place the ESP8266 in the pin header as shown below. Make sure that non of the pins stick out, every pin has a hole it should go in. It is easy to pull out again and put it back in if it's wrong. 
 
 ![](assets/16_esp01_on_pcb.jpg)
 
@@ -133,11 +133,11 @@ Place the ESP8266 in the pin header as shown below. Make sure that non of the pi
 If you have got this far, the hardware is now done. YAY!!!
 
 you should now go and Seek Hafnium (Emil) for help programming your ESP8266.
-If its already programmed, then your ready for testing! 
+If it's already programmed, then you are ready for testing! 
 
 ## Part B: Flash WLED
 
-In this part we will flash firmware to the ESP01 microcontroller. We will use [ESPtools](https://github.com/espressif/esptool/releases/latest) from Espressif
+In this part, we will flash firmware to the ESP01 microcontroller. We will use [ESPtools](https://github.com/espressif/esptool/releases/latest) from Espressif
 
 For your computer to understand which kind of language to speak with the USB device, a driver called **CH340** needs to be installed
 
@@ -146,14 +146,14 @@ There exists three options:
 
 -   Three options for flashing firmware:
     -   Easy way: Head over to [https://install.wled.me/](https://install.wled.me/) on Chrome (or Chromium) and press install
-	    - **However** this it only works on devices with 4 MB memory or more, theThe ESP01S have 1 MB of memory so it is unfortunately not a choice. Therefore the other options must be used.
+	    - **However** this only works on devices with 4 MB memory or more, The ESP01S has 1 MB of memory so it is unfortunately not a choice. Therefore other options must be used.
     -   Medium way: Install ESPtools, see below
     -   Difficult way: Use esptools.py with [VSCode](https://code.visualstudio.com/) and the [platform.io](https://platformio.org/) extension , 
 	    - This is required if you want to use usermods or compile source code: 
 
 #### Linux
 ##### Driver
-The USB driver **CH340** driver have been included the linux kernel since v.2.6.24 from 2008-01-24, so that should not be a problem.
+The USB driver **CH340** driver has been included in the Linux kernel since v.2.6.24 from 2008-01-24, so that should not be a problem.
 
 ###### ESPtools
 On most systems it can be installed with:
@@ -179,7 +179,7 @@ install with:
 sudo apt install esptool
 ```
 
-#### Verify USB device and its required driver is detected
+#### Verify USB device and its required driver are detected
 Run the following command
 ```bash
 sudo dmesg -we
@@ -194,7 +194,7 @@ Now plug in the programmer. The output should look similar to this
 [  +0,003645] ch34x 1-4:1.0: ch34x converter detected
 [  +0,000737] usb 1-4: ch34x converter now attached to ttyUSB0
 ```
-If your output is missing the last two line, then fetch the [PlatformIO udev rules ](https://docs.platformio.org/en/stable//core/installation/udev-rules.html) and follow the instructions on the site.
+If your output is missing the last two lines, then fetch the [PlatformIO udev rules ](https://docs.platformio.org/en/stable//core/installation/udev-rules.html) and follow the instructions on the site.
 
 
 #### Windows
@@ -230,8 +230,8 @@ brew install esptool
 
 ## Flash firmware to ESP
 - Download the latest [WLED ESP01 binary](https://github.com/Aircoookie/WLED//releases/latest)
-- Plug a ESP01 into the programmer
-- Insert programmer into a USB-A port 
+- Plug an ESP01 into the programmer
+- Insert the programmer into a USB-A port 
 
 
 The flashing command is similar for all operating systems with a few variances
@@ -240,7 +240,7 @@ The flashing command is similar for all operating systems with a few variances
 ```bash
 esptool.py write_flash 0x0 WLED_0.13.3_ESP01.bin
 ```
-ESPtool can auto-detect the port, but it can specified with the  `-p` flag. The ports are usually `/dev/ttyUSB0` or `/dev/ttyACM0`.
+esptool can auto-detect the port, but it can be specified with the  `-p` flag. The ports are usually `/dev/ttyUSB0` or `/dev/ttyACM0`.
 
 If esptool connects to the flasher and progresses, then you have successfully flashed firmware
 
@@ -262,7 +262,7 @@ A fatal error occurred: Could not connect to an Espressif device on any of the 1
 #### Problem: esptool not found
 If calling the esptool program after successful installation returns the error `esptool not found`. 
 
-**Solution:** The path for python modules have not been set. 
+**Solution:** The path for python modules has not been set. 
 Do:
 ```bash
 echo export PATH="/usr/local/bin:$PATH" >> ~/.bash_profile
@@ -275,7 +275,7 @@ source ~/.bash_profile
 esptool.exe -p COMx write_flash 0x0 WLED_0.13.3_ESP01.bin
 ```
 
-The com port can be found under device manager, see image
+The com port can be found under the device manager, see the image
 ![](assets/part_b_01_windows_devices.png)
 
 If esptool connects to the flasher and progresses, then you have successfully flashed firmware
@@ -302,13 +302,13 @@ once plugged in the Neo Pixel strip will light up green, and the ESP8266 will gi
 
 Find and join the WLED WiFi. 
 
-(**NOTE:** the WIFI near Labitat is currently very packed, and you might not see your WLED WIFI access point, if that the case, try moving to another room. Or even outside, with your laptop as a power source for the WLED)
+(**NOTE:** The WIFI near Labitat is currently very packed, and you might not see your WLED WIFI access point, if that is the case, try moving to another room. Or even outside, with your laptop as a power source for the WLED)
 
-As there is many of you all trying this at once, its recommended that you wait a bit before you power up your WLED, or try do it quickly. 
+As there are many of you are trying this at once, it's recommended that you wait a bit before you power up your WLED, or try to do it quickly. 
 
 ```
-Wifi Name  : WLED 
-Password   :"wled1234"
+Wifi name: WLED 
+Password: "wled1234"
 ```
 
 Once your connected your phone should redirect you to a “login page” if not go to `http://4.3.2.1`
@@ -322,10 +322,10 @@ now click on a random color on the color wheel and see that YOUR WLED changes to
 
 ![](assets/18_wled_mobile.png)
 
-If it dose not, your on some one else WLED. If it does congratulations! 
+If it does not, you are on someone else WLED. If it does congratulations! 
 
-Please go to the options on the top right, and lick on “User Interface”
-from there change the host name of the device from “WLED” to something of your choosing. This will help you identified your WLED. 
+Please go to the options on the top right, and click on “User Interface”
+from there change the hostname of the device from “WLED” to something of your choosing. This will help you identify your WLED. 
 
 ![](assets/19_wled_setup_user_interface.jpg)
 
@@ -334,9 +334,9 @@ from there change the host name of the device from “WLED” to something of yo
 From here you go click save. Then go back to the main page.
 Now the Tab on your browser will be the name you set, This can be helpful if you have multiple WLED devices on the same network. 
 
-You can change the “Effects” and color pallet, and generally play around with it. 
+You can change the “Effects” and color pallet and generally play around with it. 
 
-From here you can just play around with it. Therese lots of great documentation online on settings and things to play with. Or if your lazy you can ask Richard or Hafnium to show you some cool things, or ask about thing. 
+From here you can just play around with it. There is lots of great documentation online on settings and things to play with. Or if you are lazy you can ask Richard or Hafnium to show you some cool things, or ask for more details on some parts.
 
 When you get home with this, you can also connect it to your home WiFi. 
 I recommend using the WLED app on IOS or Android for easily finding and controlling your WLED devices on your home WiFi. 
@@ -348,6 +348,6 @@ I recommend using the WLED app on IOS or Android for easily finding and controll
 )
 
 **Documentation**
-There are also some great documentation online for changing settings and doing other things with it. [https://kno.wled.ge/basics/tutorials/](https://kno.wled.ge/basics/tutorials/)
+There is also some great documentation online for changing settings and doing other things with it. [https://kno.wled.ge/basics/tutorials/](https://kno.wled.ge/basics/tutorials/)
 
 
