@@ -19,7 +19,7 @@ Link: [Part C](partC.md)
 ## Extra
 - WLED [repository](https://github.com/Aircoookie/WLED)
 - WLED [Documentation](https://kno.wled.ge/basics/tutorials/)
-- [Sound Reactive version](https://github.com/atuline/) of WLED
+- [Sound Reactive version](https://github.com/atuline/WLED) of WLED
   - Only supports ESP32
   - We recommend the INMP441 I2S digital microphone
   - Many built-in options for 2D matrices
