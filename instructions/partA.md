@@ -121,10 +121,22 @@ Place the ESP8266 in the pin header as shown below. Make sure that non of the pi
 ![](assets/16_esp01_on_pcb.jpg)
 
 #### Step 6
+The ESP01 needs to short GPIO-0 to GND to enable programming mode. Hence the CH340 serial programmer needs a wire.
+
+
+CH340 serial adapter
+![CH340 serial adapter](assets/17_CH340_programmer.jpg)
+
+
+Shorted GPIO-0 to GND
+![Short GPIO-0 to GND](assets/18_CH340_shorted.jpg)
+
+
+#### Step 7
 
 If you have got this far, the hardware is now done. YAY!!!
 
-you should now go and Seek Hafnium (Emil) for help programming your ESP8266.
+you should now go switch with the other group to program your ESP01-S.
 If it's already programmed, then you are ready for testing! 
 
 
