@@ -1,0 +1,12 @@
+Id,Designator,Package,Quantity,Designation,Supplier,suplyer ID
+1,"C1,C2",C_0805_2012Metric,2,25uF,https://www.digikey.dk/en/products/detail/samsung-electro-mechanics/CL21B474KBFNNNG/3894539,1276-6482-1-ND
+2,J1,PinSocket_2x04_P2.54mm_Vertical,1,ESP,https://www.digikey.com/en/products/detail/sullins-connector-solutions/PPTC042LFBN-RC/810211?s=N4IgTCBcDaIMoHYAMCwFoByAREBdAvkA,S7072-ND
+4,U1,SOT-223-3_TabPin2,1,AMS1117-3.3,https://www.digikey.dk/en/products/detail/texas-instruments/LM1117MPX-3-3/5055942,296-41282-1-ND
+7,SW1,SW_Push_1P1T_NO_6x6mm_H9.5mm,1,Button,https://www.digikey.com/en/products/detail/schurter-inc/1301-9314-24/8536716?s=N4IgTCBcDaICwA4BsBaOBGBcXpQOQBEQBdAXyA,486-4184-1-ND 
+,PCB,50mm X 12mm Black PCB,1,PCB,https://jlcpcb.com/,https://github.com/Richard42Graham/WLED-Lion/tree/main/ESP-Gerbers
+,USB,USB-A power wire,1,USB WIRE,https://www.aliexpress.com/item/4000079448380.html,USB male to male: 
+,LEDs,5M WS281X,1,Neo pixel strip,https://www.aliexpress.com/item/1005001841569840.html,
+,JST,Neo pixel Connector,1,JST connector,https://de.aliexpress.com/item/32801353259.html?gatewayAdapt=glo2deu,3 pin JST connector:
+,ESP,ESP8266 – 01,1,ESP8266-01,https://www.aliexpress.com/item/32693314450.html,ESP01
+,Programmer,USB to UART programmer,1,programmer,https://de.aliexpress.com/item/32693314450.html?gatewayAdapt=glo2deu,CH340G
+,zip ties,small zip ties,2,zip ties,https://de.aliexpress.com/item/4001165214623.html?spm=a2g0o.productlist.0.0.533175a8QuwIFV&algo_pvid=5b454d01-01c8-4ac1-9a3d-aad3b4f4a070&algo_exp_id=5b454d01-01c8-4ac1-9a3d-aad3b4f4a070-8&pdp_ext_f=%7B%22sku_id%22%3A%2210000014978869167%22%7D&pdp_npi=2%40dis%21USD%210.72%210.58%21%21%211.24%21%21%402101e9d516628224187664904e8cc7%2110000014978869167%21sea&curPageLogUid=OPI44xhc9occ,3 x 60mm black
