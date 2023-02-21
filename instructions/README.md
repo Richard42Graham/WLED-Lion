@@ -2,7 +2,7 @@
 
 WLED Workshop Instructions.
 
-Rev 1.1
+Rev 1.1.1
 
 ![](assets/word_art.png)
 

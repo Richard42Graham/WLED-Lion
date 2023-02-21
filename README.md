@@ -1,6 +1,6 @@
 # WLED-Lion
 
-<span style=font-size:large>Instructions can be found at [instructions/instructions.md](instructions/instructions.md).</span>
+<span style=font-size:large>Instructions can be found at [instructions/README.md](instructions/README.md).</span>
 
 This repository contains the instructions and the PCB files for a soldering and firmware flashing workshop.
 
