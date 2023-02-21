@@ -92,7 +92,7 @@ brew install esptool
 ```
 
 ## Flash firmware to ESP
-- Download the latest [WLED ESP01 binary](https://github.com/Aircoookie/WLED//releases/latest)
+- Download the latest [WLED ESP01 binary](https://github.com/Aircoookie/WLED//releases/latest) called `WLED_0.14.0-b1_ESP01.bin`
 - Plug an ESP01 into the programmer
 - Insert the programmer into a USB-A port 
 
@@ -101,7 +101,7 @@ The flashing command is similar for all operating systems with a few variances
 ### Linux and Mac
 
 ```bash
-esptool.py write_flash 0x0 WLED_0.13.3_ESP01.bin
+esptool.py write_flash 0x0 WLED_0.14.0-b1_ESP01.bin 
 ```
 esptool can auto-detect the port, but it can be specified with the  `-p` flag. The ports are usually `/dev/ttyUSB0` or `/dev/ttyACM0`.
 
@@ -111,7 +111,7 @@ If esptool connects to the flasher and progresses, then you have successfully fl
 #### Troubleshooting
 ##### Problem: failed connection in ESPtools:
 ```bash
-esptool.py v4.3  
+esptool.py v4.3
 Found 1 serial ports  
 Serial port /dev/ttyUSB0  
 Connecting.................  
@@ -135,7 +135,7 @@ source ~/.bash_profile
 
 ### Windows
 ```bash
-esptool.exe -p COMx write_flash 0x0 WLED_0.13.3_ESP01.bin
+esptool.exe -p COMx write_flash 0x0 WLED_0.14.0-b1_ESP01.bin
 ```
 
 The com port can be found under the device manager, see the image
