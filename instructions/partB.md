@@ -147,6 +147,6 @@ If esptool connects to the flasher and progresses, then you have successfully fl
 Now head over to [Part C](./partC.md).
 
 ## Credits
-- Installation instruction for Windows came from [Sparkfun]()
+- Installation instruction for Windows came from [Sparkfun](https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all)
 - Installation instructions for Mac came from [Decatur Makers](https://github.com/DecaturMakers/CH340_drivers-Linux-Mac-Windows/blob/master/README.md)
 
