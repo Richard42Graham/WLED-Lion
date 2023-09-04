@@ -48,6 +48,12 @@ install with:
 sudo apt install esptool
 ```
 
+#### NixOS
+get a shell with it:
+```bash
+nix-shell -p esptool
+```
+
 #### Verify USB device and its required driver are detected
 Plug in the serial adapter and run the following command
 ```bash
